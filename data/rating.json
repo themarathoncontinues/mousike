@@ -1,0 +1,39 @@
+{
+  "data": {
+    "accountStanding": {
+      "reputation": "float",
+      "genreReputation": "float"
+    },
+    "ratingCriteria": {
+      "complexity": "float",
+      "consistency": "float",
+      "content": "float",
+      "continuity": "float",
+      "lyrics": "float",
+      "production": "float",
+      "style": "float",
+      "substance": "float",
+      "technicality": "float",
+      "tenacity": "float"
+    },
+    "reviewComment": "string",
+    "source": {
+      "albumName": "string",
+      "artistName": "string",
+      "releaseDate": "string",
+      "label": "string",
+      "metadata": {
+        "rating": {
+          "amount": "int",
+          "consensus": "float",
+          "initial": "string"
+        }
+      }
+    }
+  },
+  "key": {
+      "accountCreatedAt": "string",
+      "userName": "string",
+      "uuid": "int"
+  }
+}
