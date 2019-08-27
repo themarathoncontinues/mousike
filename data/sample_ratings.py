@@ -1,15 +1,15 @@
 import json
 import random
 
-from collections import OrderedDict
-
 
 def generate_random_ratings(length):
+    ratings = []
     for x in range(length):
         yield {
             "data": {
-                "reputation": random.uniform(0, 10),
-                "genreReputation": random.uniform(0, 10)
+                "acountStanding": {
+                    "reputation": random.uniform(0, 10),
+                    "genreReputation": random.uniform(0, 10)
                 },
                 "ratingCriteria": {
                     "complexity": random.uniform(0, 10),
@@ -34,10 +34,28 @@ def generate_random_ratings(length):
                         "amount": x+1,
                         "initial": "2019-08-23"
                     }
-                },
+                }
+            },
             "key": {
                 "accountCreatedAt": "2019-08-21",
                 "userName": "leon",
                 "uuid": x+1
             }
         }
+
+
+def create_random_ratings():
+    length = 1000
+
+    ratings = generate_random_ratings(length)
+    with open('data/sample_data/random_ratings.txt', 'w') as fout:
+        for rating in ratings:
+            json.dump(rating, fout)
+            print(json.dumps(rating, indent=4))
+
+    print('-----Random Ratings Created-----')
+
+
+
+if __name__ == '__main__':
+    create_random_ratings()

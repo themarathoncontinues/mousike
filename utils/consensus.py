@@ -1,20 +1,16 @@
 import json
 
-from data.sample_ratings import generate_random_ratings
+# temporary data read
+ratings = []
+with open('data/sample_data/random_ratings.txt') as f:
+    for rating in f:
+        ratings.append(json.loads(rating))
 
 
-def test_random_ratings():
-    length = 1000
 
-    ratings = generate_random_ratings(length)
-    with open('data/sample_data/random_ratings.json', 'w') as fout:
-        for rating in ratings:
-            json.dump(rating, fout)
-            print(json.dumps(rating, indent=4))
-
-    print('Finished')
-
+def consensus_rating(ratings):
+    print(ratings)
 
 
 if __name__ == '__main__':
-    test_random_ratings()
+    consensus_rating(ratings)
