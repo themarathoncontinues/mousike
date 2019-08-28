@@ -5,7 +5,7 @@ import random
 def generate_random_ratings(length):
     ratings = []
     for x in range(length):
-        yield {
+        rating =  {
             "data": {
                 "acountStanding": {
                     "reputation": random.uniform(0, 10),
@@ -43,12 +43,16 @@ def generate_random_ratings(length):
             }
         }
 
+        ratings.append(rating)
+
+    return ratings
+
 
 def create_random_ratings():
     length = 1000
 
     ratings = generate_random_ratings(length)
-    with open('data/sample_data/random_ratings.txt', 'w') as fout:
+    with open('data/sample_data/random_ratings.json', 'w') as fout:
         for rating in ratings:
             json.dump(rating, fout)
             print(json.dumps(rating, indent=4))
