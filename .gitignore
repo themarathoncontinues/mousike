@@ -1,5 +1,7 @@
 # venv
 env/
+venv/
+.env
 
 # ide
 __pycache__/
