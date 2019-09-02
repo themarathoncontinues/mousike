@@ -6,3 +6,6 @@ venv/
 # ide
 __pycache__/
 .idea/
+
+#jupyter
+.ipynb_checkpoints/

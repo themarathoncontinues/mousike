@@ -7,10 +7,11 @@ def generate_random_ratings(length):
     for x in range(length):
         rating =  {
             "data": {
-                "acountStanding": {
+                "accountStanding": {
                     "reputation": random.uniform(0, 10),
                     "genreReputation": random.uniform(0, 10)
                 },
+                "overallRating": random.uniform(0, 10),
                 "ratingCriteria": {
                     "complexity": random.uniform(0, 10),
                     "consistency": random.uniform(0, 10),
