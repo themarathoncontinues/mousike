@@ -1,0 +1,18 @@
+{
+  "data": {
+    "accountStanding": {
+      "reputation": "float",
+      "genreReputation": "float"
+    },
+    "ratingId": "string",
+    "ratingSignal": {
+      "thumbsUp": "int",
+      "thumbsDown": "int"
+    }
+  },
+  "key": {
+      "accountCreatedAt": "string",
+      "userName": "string",
+      "uuid": "int"
+  }
+}

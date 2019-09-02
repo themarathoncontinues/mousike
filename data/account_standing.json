@@ -1,0 +1,15 @@
+{
+  "data": {
+    "accountStanding": {
+      "reputation": {
+        "overall": "float",
+        "count": "int"
+      }
+    }
+  },
+  "key": {
+      "accountCreatedAt": "string",
+      "userName": "string",
+      "uuid": "int"
+  }
+}

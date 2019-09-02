@@ -4,6 +4,7 @@
       "reputation": "float",
       "genreReputation": "float"
     },
+    "overallRating": "float",
     "ratingCriteria": {
       "complexity": "float",
       "consistency": "float",
@@ -16,19 +17,22 @@
       "technicality": "float",
       "tenacity": "float"
     },
-    "reviewComment": "string",
+    "ratingComment": "string",
+    "ratingId": "string",
     "source": {
       "albumName": "string",
       "artistName": "string",
       "releaseDate": "string",
       "label": "string",
+      "genre": "enumeration",
       "metadata": {
         "rating": {
           "amount": "int",
           "consensus": "float",
           "initial": "string"
         }
-      }
+      },
+      "relativeWeight": "float"
     }
   },
   "key": {
