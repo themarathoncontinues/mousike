@@ -32,6 +32,9 @@ def calculate_rating(new_ratings):
     return weighted_consensus
 
 
+# this is all temporary
+# mock-up for rating calculation
+
 if __name__ == '__main__':
     length = 1000
     weights = rating_weight(length)
